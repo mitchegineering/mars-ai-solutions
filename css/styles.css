@@ -422,6 +422,7 @@ form.card { display: flex; flex-direction: column; gap: 18px; }
   box-shadow: 0 0 0 3px rgba(91,140,255,0.15);
 }
 .form-note { font-size: 0.8rem; color: var(--text-dimmer); }
+.form-note a { color: var(--blue); text-decoration: underline; }
 
 /* ---------- Footer ---------- */
 footer {
