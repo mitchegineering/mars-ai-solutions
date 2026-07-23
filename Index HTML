@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mars AI Solutions — Voice AI Agents for Local Businesses</title>
+<meta name="description" content="Mars AI Solutions builds custom voice AI agents that answer calls, book jobs, and qualify leads for local service businesses.">
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="scroll-progress" id="scroll-progress"></div>
+<div class="bg-fx" aria-hidden="true">
+  <canvas id="starfield"></canvas>
+  <span class="orb orb-a"></span>
+  <span class="orb orb-b"></span>
+  <span class="orb orb-c"></span>
+</div>
+
+<nav class="nav">
+  <div class="container">
+    <a href="#top" class="brand">
+      <img src="assets/logo.svg" alt="Mars AI Solutions logo">
+      MARS AI SOLUTIONS
+    </a>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#how-it-works">How It Works</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="#contact" class="btn btn-primary">Book a Free Call</a>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+  </div>
+</nav>
+
+<main id="top">
+
+  <!-- Hero -->
+  <section class="hero">
+    <canvas id="hero-helix" class="hero-helix" aria-hidden="true"></canvas>
+    <div class="hero-glow"></div>
+    <div class="container">
+      <span class="eyebrow">Voice AI for your business</span>
+      <h1>AI voice agents that <span class="gradient-text">never miss a call.</span></h1>
+      <p class="lead">Mars AI Solutions builds custom voice AI agents that answer your phone, book jobs, and qualify leads — without you hiring another employee.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">Book a Free Call</a>
+        <a href="#how-it-works" class="btn btn-ghost">See How It Works</a>
+      </div>
+      <div class="hero-note"><span class="dot"></span> Helping businesses stay ahead with smarter customer conversations</div>
+    </div>
+  </section>
+
+  <!-- Niche strip -->
+  <div class="niche-strip">
+    <div class="container">
+      <span class="label">Built for businesses that live on the phone:</span>
+      <span class="niche-pill">Plumbing</span>
+      <span class="niche-pill">HVAC</span>
+      <span class="niche-pill">Electricians</span>
+      <span class="niche-pill">Contractors</span>
+      <span class="niche-pill">Real Estate</span>
+      <span class="niche-pill">Auto Repair</span>
+      <span class="niche-pill">& more</span>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <section id="services">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">What you get</span>
+        <h2>One agent, three jobs it never calls in sick for.</h2>
+        <p>Every business is different, so every agent is built and trained specifically for how your business actually operates.</p>
+      </div>
+      <div class="grid-3">
+        <div class="card reveal">
+          <div class="icon">📞</div>
+          <h3>Inbound Call Handling</h3>
+          <p>Never send another caller to voicemail. Your AI agent picks up instantly, sounds natural, and handles the conversation like your best front-desk hire.</p>
+        </div>
+        <div class="card reveal">
+          <div class="icon">🗓</div>
+          <h3>Appointment Booking</h3>
+          <p>Books jobs straight into your calendar in real time — so you show up to a full schedule instead of chasing callbacks between jobs.</p>
+        </div>
+        <div class="card reveal">
+          <div class="icon">🎯</div>
+          <h3>Lead Qualification</h3>
+          <p>Filters real jobs from tire-kickers and captures every detail — name, issue, urgency — before it ever reaches you.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section id="how-it-works">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Process</span>
+        <h2>From missed calls to a working agent in three steps.</h2>
+        <p>No long contracts, no bloated software rollout — just a system built around how your business already runs.</p>
+      </div>
+      <div class="steps">
+        <div class="step reveal">
+          <span class="num">01</span>
+          <h3>Discovery Call</h3>
+          <p>We talk through how you handle customers today, what a good lead looks like, and where calls are currently falling through the cracks.</p>
+        </div>
+        <div class="step reveal">
+          <span class="num">02</span>
+          <h3>Custom Build</h3>
+          <p>I build and train your voice agent on your business specifically — your services, your pricing, your tone, your calendar.</p>
+        </div>
+        <div class="step reveal">
+          <span class="num">03</span>
+          <h3>Launch &amp; Optimize</h3>
+          <p>Your agent goes live on your business line. I monitor real calls and keep tuning it as your business grows.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About / founder -->
+  <section id="about">
+    <div class="container about">
+      <div class="about-copy reveal">
+        <span class="eyebrow">Why Mars AI Solutions</span>
+        <h2 style="font-size: clamp(1.8rem, 3vw, 2.6rem); margin-bottom: 24px;">Built to help you grow, not just keep up.</h2>
+        <p>Mars AI Solutions exists to help businesses grow and stay competitive in a world where technology never stops advancing. We believe every business deserves access to the same AI-driven tools that used to be reserved for companies with enterprise budgets.</p>
+        <p>That means building voice AI agents that don't just answer the phone — they actively help you capture more business, run more efficiently, and stay ahead of the curve instead of catching up to it.</p>
+        <p><strong>We measure our success by yours.</strong> If you're not seeing real results, we don't consider the job done — your satisfaction isn't a metric to us, it's the whole point.</p>
+      </div>
+      <div class="about-card reveal">
+        <div class="stat"><span class="label">Mission</span><span class="value">Help businesses grow with AI</span></div>
+        <div class="stat"><span class="label">Approach</span><span class="value">Custom-built, not off-the-shelf</span></div>
+        <div class="stat"><span class="label">Standard</span><span class="value">We're not done until you're satisfied</span></div>
+        <div class="stat"><span class="label">Focus</span><span class="value">Businesses ready to modernize</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section>
+    <div class="container">
+      <div class="cta reveal">
+        <span class="eyebrow">Get started</span>
+        <h2>Ready to stop missing calls?</h2>
+        <p>Book a free 15-minute call and I'll show you what a voice agent built specifically for your business could sound like.</p>
+        <div class="cta-actions">
+          <a href="#contact" class="btn btn-primary">Book a Free Call</a>
+          <a href="mailto:contact@marsaisolutions.io" class="btn btn-ghost">Email Me</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container contact-wrap">
+      <div class="contact-info reveal">
+        <span class="eyebrow">Contact</span>
+        <h2>Let's talk about your business.</h2>
+        <p>Tell me a bit about how your phone gets used day to day, and I'll follow up to set up a quick call.</p>
+        <div class="contact-item"><span class="icon-sm">✉</span> contact@marsaisolutions.io</div>
+        <div class="contact-item"><span class="icon-sm">📍</span> Remote — serving local service businesses</div>
+      </div>
+      <form class="card reveal" id="contact-form">
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required>
+        </div>
+        <div class="field">
+          <label for="business">Business name</label>
+          <input type="text" id="business" name="business" placeholder="e.g. Summit Plumbing Co.">
+        </div>
+        <div class="field">
+          <label for="email">Email or phone</label>
+          <input type="text" id="email" name="email" placeholder="Best way to reach you" required>
+        </div>
+        <div class="field">
+          <label for="message">What's going on with your calls?</label>
+          <textarea id="message" name="message" rows="4" placeholder="e.g. We miss calls when we're on jobs and lose the work to competitors."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send</button>
+        <p class="form-note">This form is a placeholder for now — it isn't wired up to send anything yet. Email me directly at contact@marsaisolutions.io in the meantime.</p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <a href="#top" class="brand">MARS AI SOLUTIONS</a>
+    <div class="foot-links">
+      <a href="#services">Services</a>
+      <a href="#how-it-works">How It Works</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <span class="foot-links">© 2026 Mars AI Solutions</span>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
