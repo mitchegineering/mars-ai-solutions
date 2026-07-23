@@ -171,6 +171,40 @@
   items.forEach((item) => observer.observe(item));
 })();
 
+// ---------- Prototype demo form (Make.com webhook) ----------
+(function demoForm() {
+  const form = document.getElementById("demo-form");
+  if (!form) return;
+  const WEBHOOK_URL = "https://hook.us2.make.com/o7e1v64lhhipp7nj7j6s2m8tgxne6js2";
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const btn = form.querySelector("button[type=submit]");
+    const original = btn.textContent;
+    btn.disabled = true;
+    btn.textContent = "Sending...";
+
+    const data = Object.fromEntries(new FormData(form).entries());
+
+    try {
+      const res = await fetch(WEBHOOK_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+      btn.textContent = res.ok ? "Sent! We'll be in touch." : "Something went wrong — try again";
+      if (res.ok) form.reset();
+    } catch (err) {
+      btn.textContent = "Something went wrong — try again";
+    }
+
+    setTimeout(() => {
+      btn.textContent = original;
+      btn.disabled = false;
+    }, 3000);
+  });
+})();
+
 // ---------- Contact form (placeholder submit) ----------
 (function contactForm() {
   const form = document.getElementById("contact-form");
